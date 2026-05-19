@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Workspace Inteligente</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="header-top">
+          <h1>My tasks</h1>
+          <button id="themeBtn" class="icon-btn">🌙</button>
+        </div>
+        <p>Write the tasks to complete.</p>
+      </header>
+      
+      <form method="post">
+        <label for="noteInput">New task:</label>
+        <input type="text" id="noteInput" placeholder="Write your tasks..." />
+        <button id="btnTask">submit</button>
+      </form>
+
+      <div id="taskStats">Pending: 0 | Completed: 0</div>
+
+      <div id="filters">
+        <button id="showAll">All</button>
+        <button id="showPending">Pending</button>
+        <button id="showCompleted">Completed</button>
+      </div>
+
+      <ul id="taskList"></ul>
+
+      <button id="deletebtn" style="margin-top: 20px; background: #ff4444; color: white; border: none; padding: 8px; cursor: pointer;">Delete Last Task</button>
+    </main> 
+  </body>
+</html>
