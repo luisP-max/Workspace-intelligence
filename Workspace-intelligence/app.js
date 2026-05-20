@@ -49,7 +49,6 @@ function renderTask() {
         <button class="btn-complete" onclick="toggleComplete(${task.id})">
           ${task.completed ? '↺' : '✓'}
         </button>
-        <!-- Botón de Edición (Bonus) -->
         <button class="btn-edit" onclick="editTask(${task.id})">✎</button>
         <button class="btn-delete" onclick="deleteOne(${task.id})">🗑</button>
       </div>
